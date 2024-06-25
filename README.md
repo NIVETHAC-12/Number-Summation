@@ -9,3 +9,8 @@ The VSDQuadron Mini Internship offers a hands-on experience focused on developin
  The board provides various clock configurations, allowing participants to explore different operational frequencies and power modes. This feature is crucial for optimizing performance and energy consumption in embedded applications.
 * **15 GPIO Pins:** 
  The board is equipped with 15 General Purpose Input/Output (GPIO) pins. These versatile pins can be programmed for various functions, including digital input, digital output, and more. They are essential for interfacing with external sensors, actuators, and other peripherals.
+
+#TASK 1 ## Sum of Numbers 1 to N
+* Install the RISC-V toolchain using VDI
+* Use the Terminal Windows in UBUNTU
+* C code for sum of numbers from 1 to N 
