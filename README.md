@@ -10,11 +10,21 @@ The VSDQuadron Mini Internship offers a hands-on experience focused on developin
 * **15 GPIO Pins:** 
  The board is equipped with 15 General Purpose Input/Output (GPIO) pins. These versatile pins can be programmed for various functions, including digital input, digital output, and more. They are essential for interfacing with external sensors, actuators, and other peripherals.
 
-#TASK 1 ## Sum of Numbers 1 to N
+##TASK 1 ## Sum of Numbers 1 to N
 * Install the RISC-V toolchain using VDI
 * Use the Terminal Windows in UBUNTU
 * C code for sum of numbers from 1 to N
 
-1. Virtual box Installed
+**1. Virtual box Installed**
 ![Virtual box installation](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/641679b3-60fc-409f-990a-c536e7f88f5b)
+**2. Ubuntu Installed**
+![Installation of Ubuntu](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/acca4611-8085-4230-8e61-70a1c0059c9d)
+**3. C code to execute The Sum of Numbers 1 to N**
+  * Leafpad id installed using `sudo snap install leafpad`
+  * Create fine using `leafpad sum1ton.c &`
+  * Here you fnd the leafpad to code `write the code`
+![C Program for Sum of 1 to N](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/cd115830-5786-4517-a151-69c5e15d5114)
+
+
+
 
