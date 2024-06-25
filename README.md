@@ -69,23 +69,23 @@ The VSDQuadron Mini Internship offers a hands-on experience focused on developin
 ![Calculation of riscv instruction](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/5e74773d-9233-4503-b863-695b4bd37a16)
 
 
-### Conclution
+## Conclution
 
  By following these steps, you will have a virtual environment set up with the RISC-V toolchain ready for development. This setup allows you to compile and test RISC-V programs.
 
 
-
-
-#### Task 2
-  ##### PROJECT 1 - Ticket Terminal Designer: Developing an Automated Parking Ticket Vending Machine
+## Task 2
+ 
+  ## PROJECT 1 - Ticket Terminal Designer: Developing an Automated Parking Ticket Vending Machine
 
   The provided C program is a simple implementation of an Automated Parking Ticket Vending Machine. The program offers functionalities to issue parking tickets, process payments for the issued tickets, and provides a user interface through a console menu.
 
-  ###### CODE 
+  ## CODE 
 
   **LANGUAGE C**
-
-  `#include <stdio.h>
+  
+```
+#include <stdio.h>
 #include <stdlib.h>
 
 int current_ticket = 0;
@@ -134,11 +134,11 @@ int main() {
     }
 
     return 0;
-}`
+}
+```
 
-  
 
- ####### CODE BREAKDOWN :
+## CODE BREAKDOWN :
  **1.Global Variable:**
 
   *  `int current_ticket = 0;`
