@@ -77,7 +77,83 @@ The VSDQuadron Mini Internship offers a hands-on experience focused on developin
 
 
 #### Task 2
-   **PROJECT 1 - Ticket Terminal Designer: Developing an Automated Parking Ticket Vending Machine**
+  ##### PROJECT 1 - Ticket Terminal Designer: Developing an Automated Parking Ticket Vending Machine
+
+  The provided C program is a simple implementation of an Automated Parking Ticket Vending Machine. The program offers functionalities to issue parking tickets, process payments for the issued tickets, and provides a user interface through a console menu.
+
+  ###### CODE 
+
+  **LANGUAGE C**
+
+  `#include <stdio.h>
+#include <stdlib.h>
+
+int current_ticket = 0;
+
+void issue_ticket() {
+    current_ticket++;
+    printf("Ticket issued: %d\n", current_ticket);
+}
+
+void pay_ticket(int ticket_number) {
+    if (ticket_number <= current_ticket && ticket_number > 0) {
+        printf("Ticket %d has been paid.\n", ticket_number);
+    } else {
+        printf("Invalid ticket number.\n");
+    }
+}
+
+void show_menu() {
+    printf("1. Issue Ticket\n");
+    printf("2. Pay Ticket\n");
+    printf("3. Exit\n");
+}
+
+int main() {
+    int choice, ticket_number;
+
+    while (1) {
+        show_menu();
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                issue_ticket();
+                break;
+            case 2:
+                printf("Enter ticket number to pay: ");
+                scanf("%d", &ticket_number);
+                pay_ticket(ticket_number);
+                break;
+            case 3:
+                exit(0);
+            default:
+                printf("Invalid choice. Please try again.\n");
+        }
+    }
+
+    return 0;
+}`
+
+  
+
+ ####### CODE BREAKDOWN :
+ **1.Global Variable:**
+
+  *  `int current_ticket = 0;`
+    
+  * This variable keeps track of the total number of tickets issued.
+
+    
+**2.Functions:**
+
+* `void issue_ticket()`
+
+ * This function increments the `current_ticket` counter and prints a message indicating that a new ticket 
+     has been issued along with the ticket number.
+* **Behavior:** Each time this function is called, it simulates issuing a new parking ticket by incrementing 
+     the ticket count.
    
 
 
