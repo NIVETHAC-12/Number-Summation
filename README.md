@@ -139,6 +139,7 @@ int main() {
 
 
 ## CODE BREAKDOWN :
+
  **1.Global Variable:**
 
   *  `int current_ticket = 0;`
@@ -149,17 +150,16 @@ int main() {
 **2.Functions:**
 
 *
-   `void issue_ticket()`
+`void issue_ticket()`
 
-*  This function increments the
-   `current_ticket`
-   counter and prints a message indicating that a new ticket has been issued along with the ticket number.
+* This function increments the `current_ticket` counter and prints a message indicating that a new ticket has been issued along with the ticket number.
   
 *  **Behavior:** Each time this function is called, it simulates issuing a new parking ticket by incrementing 
       the ticket count.
   
 *
-   ```
+```
+   
   void issue_ticket() {
     current_ticket++;
     printf("Ticket issued: %d\n", current_ticket);
@@ -169,7 +169,6 @@ int main() {
 
 * `void show_menu()`
   
-
 * This function prints the main menu options to the console.
   
 * **Behavior:** Provides a user-friendly interface for interacting with the program.
@@ -188,13 +187,9 @@ void show_menu() {
 
 * The main function runs an infinite loop to keep the program active until the user decides to exit.
   
-* Inside the loop, it displays the menu using
-   `show_menu()`
-  , reads the user's choice, and executes the corresponding action using a switch-case structure.
+* Inside the loop, it displays the menu using `show_menu()` , reads the user's choice, and executes the corresponding action using a switch-case structure.
   
-* *CASE 1:* Calls
-  `issue_ticket()`
-   to issue a new ticket.
+* *CASE 1:* Calls `issue_ticket()` to issue a new ticket.
   
 * *CASE 2:* Prompts the user to enter a ticket number and calls `pay_ticket()` to process the payment.
   
@@ -235,7 +230,6 @@ int main() {
 ```
  
  
-
 ## **Summary:**
 
 * The program provides a basic implementation of a parking ticket vending system.
@@ -254,7 +248,7 @@ This code serves as a foundational example of how an automated ticket vending sy
 
 ![Screenshot from 2024-06-25 12-39-04](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/d894a1b2-ca5f-4074-996b-87703f7d6cfa)
 
- ## 2 OUTPUT
+ ### 2 OUTPUT
 
  * Compile the program using `gcc tiketterminal.c` and execute the program using `./a.out` command
    
