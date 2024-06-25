@@ -148,7 +148,8 @@ int main() {
     
 **2.Functions:**
 
-* `void issue_ticket()`
+*
+   `void issue_ticket()`
 
  * This function increments the `current_ticket` counter and prints a message indicating that a new ticket 
      has been issued along with the ticket number.
