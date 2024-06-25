@@ -69,10 +69,16 @@ The VSDQuadron Mini Internship offers a hands-on experience focused on developin
 ![Calculation of riscv instruction](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/5e74773d-9233-4503-b863-695b4bd37a16)
 
 
-### **Conclution**
+### Conclution
 
  By following these steps, you will have a virtual environment set up with the RISC-V toolchain ready for development. This setup allows you to compile and test RISC-V programs.
 
+
+
+
+#### Task 2
+   **PROJECT 1 - Ticket Terminal Designer: Developing an Automated Parking Ticket Vending Machine**
+   
 
 
 
