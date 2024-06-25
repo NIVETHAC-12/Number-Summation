@@ -13,4 +13,8 @@ The VSDQuadron Mini Internship offers a hands-on experience focused on developin
 #TASK 1 ## Sum of Numbers 1 to N
 * Install the RISC-V toolchain using VDI
 * Use the Terminal Windows in UBUNTU
-* C code for sum of numbers from 1 to N 
+* C code for sum of numbers from 1 to N
+
+1. Virtual box Installed
+![Virtual box installation](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/641679b3-60fc-409f-990a-c536e7f88f5b)
+
