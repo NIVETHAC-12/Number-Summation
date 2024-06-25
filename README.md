@@ -69,7 +69,7 @@ The VSDQuadron Mini Internship offers a hands-on experience focused on developin
 ![Calculation of riscv instruction](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/5e74773d-9233-4503-b863-695b4bd37a16)
 
 
-## Conclution
+## Conclusion
 
  By following these steps, you will have a virtual environment set up with the RISC-V toolchain ready for development. This setup allows you to compile and test RISC-V programs.
 
@@ -152,7 +152,7 @@ int main() {
     
 **2.Functions:**
 
-*
+
 `void issue_ticket()`
 
 * This function increments the `current_ticket` counter and prints a message indicating that a new ticket has been issued along with the ticket number.
@@ -176,7 +176,7 @@ int main() {
   
 * **Behavior:** Provides a user-friendly interface for interacting with the program.
   
-*
+
 ```
 void show_menu() {
     printf("1. Issue Ticket\n");
@@ -202,7 +202,7 @@ void show_menu() {
   
 *Behavior:* Manages the flow of the program and user interactions.
 
-*
+
 ```
 int main() {
     int choice, ticket_number;
@@ -253,7 +253,7 @@ This code serves as a foundational example of how an automated ticket vending sy
 
  ### 2 OUTPUT
 
- * Compile the program using `gcc tiketterminal.c` and execute the program using `./a.out` command
+ * Compile the program using `gcc ticketterminal.c` and execute the program using `./a.out` command
    
 
  ![Screenshot from 2024-06-25 16-21-39](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/204cc40b-8da0-4e3d-98ff-0723164110f4)
@@ -262,7 +262,7 @@ This code serves as a foundational example of how an automated ticket vending sy
  ## 3 Converting the C program to RISC-V instruction set 
 
  * Compile the code using the RISC-V GCC compiler with the following command:
- * 
+  
    ```
    riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o ticketterminal.o ticketterminal.c
    ```
@@ -301,7 +301,7 @@ riscv64-unknown-elf-objdump -d ticketterminal.o |less
 
 * There are 14 lines in the instruction in the main block of the function `Ofast` by comparing both the main functions we come to know that the `Ofast` function has been reduced for few numbers.
 
-## CONCLUTION
+## CONCLUSION
 
 
 The provided C program effectively demonstrates the fundamental operations of an Automated Parking Ticket Vending Machine. By utilizing simple functions and a console-based menu interface, the code provides a clear and accessible way to issue parking tickets and process their payments.
