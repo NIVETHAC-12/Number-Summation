@@ -236,7 +236,7 @@ int main() {
  
  
 
-**Summary:**
+## **Summary:**
 
 * The program provides a basic implementation of a parking ticket vending system.
 
