@@ -272,7 +272,34 @@ This code serves as a foundational example of how an automated ticket vending sy
 riscv64-unknown-elf-objdump -d ticketterminal.o |less
 ```
 
-   
+ ![Screenshot from 2024-06-25 17-10-05](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/37e0ac71-1e04-46f1-b54b-f54eebaf0e41)
+
+ * To access the main function using `/main` statement
+
+![Screenshot from 2024-06-25 17-17-07](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/90504dbc-bf82-4f48-bc8c-cfa3fc62695d)
+
+
+* calculation for `-o1` instruction
+
+![Screenshot 2024-06-25 125814](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/a70225a9-0607-410b-b848-35c76096b0ee)
+
+* So here in the above calculation there are **43** lines in the main function
+
+* To obtain the difference execute the same function using the `-Ofast` function like given below
+  `riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o ticketterminal.o ticketterminal.c`
+
+![Screenshot from 2024-06-25 16-35-56 (1)](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/74a5dcad-e963-404d-8ef5-ef1985a5996a)
+
+* Same way,access the main function again to calculate the number of instructions
+
+![Screenshot 2024-06-25 131849](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/94b40382-1128-48cd-9c7d-f550f918e90f)
+
+
+* There are 14 lines in the instruction in the main block of the function `Ofast` by comparing both the main functions we come to know that the `Ofast` function has been reduced for few numbers.
+
+
+
+
 
 
 
