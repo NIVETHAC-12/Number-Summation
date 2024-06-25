@@ -80,7 +80,7 @@ The VSDQuadron Mini Internship offers a hands-on experience focused on developin
 
   The provided C program is a simple implementation of an Automated Parking Ticket Vending Machine. The program offers functionalities to issue parking tickets, process payments for the issued tickets, and provides a user interface through a console menu.
 
-  ## CODE 
+  ## 1 CODE 
 
   **LANGUAGE C**
   
@@ -154,14 +154,121 @@ int main() {
      has been issued along with the ticket number.
 * **Behavior:** Each time this function is called, it simulates issuing a new parking ticket by incrementing 
      the ticket count.
-* ```
+*
+   ```
   void issue_ticket() {
     current_ticket++;
     printf("Ticket issued: %d\n", current_ticket);
   }
- ```*
+ ```
+
+*
+`void show_menu()`
+
+* This function prints the main menu options to the console.
+  
+* **Behavior:** Provides a user-friendly interface for interacting with the program.
+  
+*
+```
+void show_menu() {
+    printf("1. Issue Ticket\n");
+    printf("2. Pay Ticket\n");
+    printf("3. Exit\n");
+}
+```
+
+**3.Main Function:**
+
+* The main function runs an infinite loop to keep the program active until the user decides to exit.
+  
+* Inside the loop, it displays the menu using `show_menu()`, reads the user's choice, and executes the corresponding action using a switch-case structure.
+  
+* *CASE 1:* Calls `issue_ticket()` to issue a new ticket.
+  
+* *CASE 2:* Prompts the user to enter a ticket number and calls `pay_ticket()` to process the payment.
+  
+* *CASE 3:* Exits the program.
+  
+* *Default Case:* Handles invalid menu choices by printing an error message.
+  
+*Behavior:* Manages the flow of the program and user interactions.
+
+*
+```
+int main() {
+    int choice, ticket_number;
+
+    while (1) {
+        show_menu();
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                issue_ticket();
+                break;
+            case 2:
+                printf("Enter ticket number to pay: ");
+                scanf("%d", &ticket_number);
+                pay_ticket(ticket_number);
+                break;
+            case 3:
+                exit(0);
+            default:
+                printf("Invalid choice. Please try again.\n");
+        }
+    }
+
+    return 0;
+}
+```
+ **Summary:**
+
+* The program provides a basic implementation of a parking ticket vending system.
+
+* Users can issue new tickets and pay for existing tickets through a simple menu interface.
+  
+* The `current_ticket` variable keeps track of the number of issued tickets.
+ 
+*The program continuously runs, allowing users to interact until they choose to exit.
+
+This code serves as a foundational example of how an automated ticket vending system can be implemented in C. It can be further extended with additional features such as ticket validation, payment processing, and database integration for a more robust solution.
+
+![Screenshot from 2024-06-25 16-06-29](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/b60c264e-baf7-46e0-b955-2c7713e5e0d7)
+
+![Screenshot from 2024-06-25 12-39-04](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/d894a1b2-ca5f-4074-996b-87703f7d6cfa)
+
+ ## 2 OUTPUT
+
+ * Compile the program using `gcc tiketterminal.c` and execute the program using `./a.out` command
+   
+
+ ![Screenshot from 2024-06-25 16-21-39](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/204cc40b-8da0-4e3d-98ff-0723164110f4)
 
 
+ ## 3 Converting the C program to RISC-V instruction set 
+
+ * Compile the code using the RISC-V GCC compiler with the following command:
+ * 
+   ```
+   riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o ticketterminal.o ticketterminal.c
+   ```
+
+![Screenshot from 2024-06-25 16-35-56](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/ce9bdc2a-61c4-4661-bd88-092bfd94c4c5)
+
+* Now, switch tab to function your main function and calculation using this command :
+
+```
+riscv64-unknown-elf-objdump -d ticketterminal.o |less
+```
+
+   
+
+
+
+
+  
    
 
 
