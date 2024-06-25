@@ -166,8 +166,8 @@ int main() {
   }
  ```
 
-*
-  `void show_menu()`
+
+* `void show_menu()`
   
 
 * This function prints the main menu options to the console.
@@ -182,6 +182,7 @@ void show_menu() {
     printf("3. Exit\n");
 }
 ```
+
 
 **3.Main Function:**
 
@@ -232,7 +233,10 @@ int main() {
     return 0;
 }
 ```
- **Summary:**
+ 
+ 
+
+**Summary:**
 
 * The program provides a basic implementation of a parking ticket vending system.
 
