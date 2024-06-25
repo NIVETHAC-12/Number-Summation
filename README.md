@@ -154,6 +154,14 @@ int main() {
      has been issued along with the ticket number.
 * **Behavior:** Each time this function is called, it simulates issuing a new parking ticket by incrementing 
      the ticket count.
+* ```
+  void issue_ticket() {
+    current_ticket++;
+    printf("Ticket issued: %d\n", current_ticket);
+  }
+ ```*
+
+
    
 
 
