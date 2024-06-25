@@ -73,7 +73,8 @@ The VSDQuadron Mini Internship offers a hands-on experience focused on developin
 
  By following these steps, you will have a virtual environment set up with the RISC-V toolchain ready for development. This setup allows you to compile and test RISC-V programs.
 
-                  *************************************************
+  
+  **XXXXXXXXXX**
 
 
 ## Task 2
@@ -305,8 +306,9 @@ riscv64-unknown-elf-objdump -d ticketterminal.o |less
 
 The provided C program effectively demonstrates the fundamental operations of an Automated Parking Ticket Vending Machine. By utilizing simple functions and a console-based menu interface, the code provides a clear and accessible way to issue parking tickets and process their payments.
 
-           *****************************************************************
-
+           
+           
+   **XXXXXXXXXX**
 
 
 
