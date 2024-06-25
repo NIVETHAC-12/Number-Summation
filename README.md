@@ -162,8 +162,7 @@ int main() {
   }
  ```
 
-*
-`void show_menu()`
+* `void show_menu()`
 
 * This function prints the main menu options to the console.
   
@@ -235,7 +234,9 @@ int main() {
 
 This code serves as a foundational example of how an automated ticket vending system can be implemented in C. It can be further extended with additional features such as ticket validation, payment processing, and database integration for a more robust solution.
 
+
 ![Screenshot from 2024-06-25 16-06-29](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/b60c264e-baf7-46e0-b955-2c7713e5e0d7)
+
 
 ![Screenshot from 2024-06-25 12-39-04](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/d894a1b2-ca5f-4074-996b-87703f7d6cfa)
 
