@@ -73,6 +73,8 @@ The VSDQuadron Mini Internship offers a hands-on experience focused on developin
 
  By following these steps, you will have a virtual environment set up with the RISC-V toolchain ready for development. This setup allows you to compile and test RISC-V programs.
 
+                  *************************************************
+
 
 ## Task 2
  
@@ -286,7 +288,8 @@ riscv64-unknown-elf-objdump -d ticketterminal.o |less
 * So here in the above calculation there are **43** lines in the main function
 
 * To obtain the difference execute the same function using the `-Ofast` function like given below
-  `riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o ticketterminal.o ticketterminal.c`
+
+   `riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o ticketterminal.o ticketterminal.c`
 
 ![Screenshot from 2024-06-25 16-35-56 (1)](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/74a5dcad-e963-404d-8ef5-ef1985a5996a)
 
@@ -296,6 +299,15 @@ riscv64-unknown-elf-objdump -d ticketterminal.o |less
 
 
 * There are 14 lines in the instruction in the main block of the function `Ofast` by comparing both the main functions we come to know that the `Ofast` function has been reduced for few numbers.
+
+## CONCLUTION
+
+
+The provided C program effectively demonstrates the fundamental operations of an Automated Parking Ticket Vending Machine. By utilizing simple functions and a console-based menu interface, the code provides a clear and accessible way to issue parking tickets and process their payments.
+
+           *****************************************************************
+
+
 
 
 
