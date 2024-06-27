@@ -363,18 +363,30 @@ riscv64-unknown-elf-gcc -Ofast -o program_Ofast program.c
 
 ![Screenshot from 2024-06-27 11-28-13](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/bde8e7c1-31a5-4f79-aa35-51742a82f652)
 
+
 ( Here we 1st got the output for our c program which we got from the AI tool)
+
 (**DeBUG done here)
 
-![Screenshot from 2024-06-27 11-27-57](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/34ee901f-3d74-4968-8218-6e81e8c4a705)
 
-(Here we get the same output as above)
+![Screenshot from 2024-06-27 11-28-34](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/2c5e0e53-2f83-4277-b1c6-f18c7285c663)
 
 
-   **2.Spike simulation:**
+
+
+ **2.Spike simulation:**
+
+ * command :
 
      `spike pk ticketterminal.o`
-     
+
+
+   ![Screenshot from 2024-06-27 11-27-57](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/34ee901f-3d74-4968-8218-6e81e8c4a705)
+
+
+* To Debug, by opening the objdump using command
+
+* `riscv64-unknown-elf-objdump -d ticketterminal.o |less` 
 
 
 
