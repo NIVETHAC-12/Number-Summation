@@ -313,6 +313,81 @@ The provided C program effectively demonstrates the fundamental operations of an
 
 
 
+   ## TASK 3
+
+   ### SPIKE simulation and verification with -O1 and -OFast along with running the RISK-V Objdump.
+
+
+**1.Simulation with SPIKE:**
+
+* Perform a simulation of your RISC-V program using the SPIKE RISC-V ISA simulator.
+
+
+**2.Verification with Optimization Levels:**
+
+* Verify the program's behavior with two different levels of optimization:
+
+ 
+ * `-O1`: This optimization level enables basic optimizations that improve performance without significantly increasing 
+         compilation time.
+ 
+ * `-Ofast`: This level enables aggressive optimizations, potentially breaking strict standards compliance for maximum 
+           performance.
+
+
+**3.Running RISC-V objdump:**
+
+* Use the RISC-V objdump tool to disassemble the program's binary, providing a human-readable assembly representation of the 
+  machine code.
+
+
+  ## So, here is all put together,you want to:
+
+  **1.Simulate your RISC-V program using the SPIKE simulator.*
+  
+  **2.Verify the program's performance and correctness with two different optimization levels (-O1 and -Ofast).*
+
+  **Use the RISC-V `objdump` tool to disassemble and inspect the binary.
+
+
+
+## Here are the possible sequence of steps:
+
+   **1.Compile the program with different optimization levels:**
+
+```
+riscv64-unknown-elf-gcc -O1 -o program_O1 program.c
+riscv64-unknown-elf-gcc -Ofast -o program_Ofast program.c
+```
+
+
+![Screenshot from 2024-06-27 11-28-13](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/bde8e7c1-31a5-4f79-aa35-51742a82f652)
+
+( Here we 1st got the output for our c program which we got from the AI tool)
+(**DeBUG done here)
+
+![Screenshot from 2024-06-27 11-27-57](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/34ee901f-3d74-4968-8218-6e81e8c4a705)
+
+(Here we get the same output as above)
+
+
+   **2.Spike simulation:**
+
+     `spike pk ticketterminal.o`
+     
+
+
+
+
+
+  
+
+ 
+   
+
+
+
+
 
 
 
