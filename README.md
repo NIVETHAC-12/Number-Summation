@@ -366,7 +366,9 @@ riscv64-unknown-elf-gcc -Ofast -o program_Ofast program.c
 
 ( Here we 1st got the output for our c program which we got from the AI tool)
 
-(**DeBUG done here)
+(**DeBUG done here**) command:
+
+* `riscv64-unknown-elf-objdump -d ticketterminal.o |less` 
 
 
 ![Screenshot from 2024-06-27 11-28-34](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/2c5e0e53-2f83-4277-b1c6-f18c7285c663)
@@ -384,9 +386,16 @@ riscv64-unknown-elf-gcc -Ofast -o program_Ofast program.c
    ![Screenshot from 2024-06-27 11-27-57](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/34ee901f-3d74-4968-8218-6e81e8c4a705)
 
 
-* To Debug, by opening the objdump using command
+* Additionally, to debug the spike we need this command `spike -d pk ticketterminal.o`
 
-* `riscv64-unknown-elf-objdump -d ticketterminal.o |less` 
+* Then, by using the command `until pc 0 100b0`,which is the 1st line command of the main function the program counter runs from the 0 till the code 100b0
+
+* To find the contents of the code we need to use the command `reg 0 sp` in which we content of the `100b0` th line
+
+* To find the content in the next line just give `ENTER`
+
+*   
+
 
 
 
