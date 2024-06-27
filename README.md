@@ -383,7 +383,8 @@ riscv64-unknown-elf-gcc -Ofast -o program_Ofast program.c
      `spike pk ticketterminal.o`
 
 
-   ![Screenshot from 2024-06-27 11-27-57](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/34ee901f-3d74-4968-8218-6e81e8c4a705)
+ 
+ ![Screenshot from 2024-06-27 11-27-57](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/34ee901f-3d74-4968-8218-6e81e8c4a705)
 
 
 
@@ -392,18 +393,28 @@ riscv64-unknown-elf-gcc -Ofast -o program_Ofast program.c
 
 * To debug the spike we need this command `spike -d pk ticketterminal.o`
 
+
 * Then, by using the command `until pc 0 100b0`,which is the 1st line command of the main function the program counter runs from the 0 till the code 100b0
+
 
 * To find the contents of the code we need to use the command `reg 0 sp` in which we content of the `100b0` th line
 
+
 * To find the content in the next line just give `ENTER`
 
+
 * Initially the value of the sp is `0X0000003ffffffb40` then the next step the sp values get subtracted with the hexadecimal and we get `0X0000003ffffffac0`
+
 
 * Finally, by subtracting the both main function values we get the 3rd output as `0X000000ffffffac0`
 
 
+
+
 ![Screenshot from 2024-06-27 11-31-02](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/4ed1f888-889d-4749-a9d9-ca6bb09ed7a5)
+
+
+XXXXXXXXXX
 
 
 
