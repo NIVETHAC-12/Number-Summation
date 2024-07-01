@@ -481,7 +481,7 @@ J-Type instructions are used for jump operations, changing the flow of control u
 # R-TYPE INSTRUCTION
 
 
-* R-Type instructions format: `funct7 | rs2 | rs1 | funct3 | rd | opcode`
+**R-Type instructions format: `funct7 | rs2 | rs1 | funct3 | rd | opcode`**
 
 * 1.ADD r1,r2,r3
 
@@ -590,7 +590,7 @@ J-Type instructions are used for jump operations, changing the flow of control u
 # I-TYPE INSTRUCTION 
 
 
-**I-Type instructions format: `imm[11:0] | rs1 | funct3 | rd | opcode`
+**I-Type instructions format: `imm[11:0] | rs1 | funct3 | rd | opcode`**
 
 
 * 9.ADDI r12,r3,5
@@ -620,7 +620,7 @@ J-Type instructions are used for jump operations, changing the flow of control u
 # S-TYPE INSTRUCTIONS
 
 
-**S-Type instructions format: `imm[11:5] | rs2 | rs1 | funct3 | imm[4:0] | opcode`
+**S-Type instructions format: `imm[11:5] | rs2 | rs1 | funct3 | imm[4:0] | opcode`**
 
 
 * 11.SW r3,r1,4
@@ -634,4 +634,80 @@ J-Type instructions are used for jump operations, changing the flow of control u
   * 32-bit: `0000000 011 001 010 00100 0100011`
 
 
- 
+
+# B-TYPE INSTRUCTION
+
+
+**B-Type instructions format: `imm[12|10:5] | rs2 | rs1 | funct3 | imm[4:1|11] | opcode`**
+
+
+* 12.BNE r0,r1,20
+
+
+  * opcode: `1100011` (B-type)
+  * funct3: `001`
+  * imm: `0000000001010` (imm[12|10:5] = `000000`, imm[4:1|11] = `01010`)
+  * rs1: `r0` (000)
+  * rs2: `r1` (001)
+  * 32-bit: `000000 001 000 001 01010 1100011`
+
+
+
+* 13.BEQ r0,r0,15
+
+
+   * opcode: `1100011` (B-type)
+   * funct3: `000`
+   * imm: `0000000000111` (imm[12|10:5] = `000000`, imm[4:1|11] = `01110`)
+   * rs1: `r0` (000)
+   * rs2: `r0` (000)
+   * 32-bit: `000000 000 000 000 01110 1100011`
+
+
+
+
+# U-TYPE INSTRUCTION
+
+
+**There are no U-type instructions in the provided list.**
+
+
+# J-TYPE INSTRUCTION
+
+
+**There are no J-type instructions in the provided list.**
+
+
+
+# Summary
+
+
+**Here are the 32-bit patterns in order:**
+
+* 1.ADD r1, r2, r3: 0000000 011 010 000 001 0110011
+  
+* 2.SUB r3, r1, r2: 0100000 010 001 000 011 0110011
+  
+* 3.AND r2, r1, r3: 0000000 011 001 111 010 0110011
+  
+* 4.OR r8, r2, r5: 0000000 101 010 110 1000 011001
+  
+* 5.XOR r8, r1, r4: 0000000 100 001 100 1000 0110011
+  
+* 6.SLT r10, r2, r4: 0000000 100 010 010 1010 0110011
+  
+* 7.SRL r16, r11, r2: 0000000 010 1011 101 10000 0110011
+  
+* 8.SLL r15, r11, r2: 0000000 010 1011 001 1111 0110011
+
+* 9.ADDI r12, r3, 5: 000000000101 011 000 1100 0010011
+  
+* 10.LW r13, r11, 2: 000000000010 1011 010 1101 0000011
+  
+* 11.SW r3, r1, 4: 0000000 011 001 010 00100 0100011
+  
+* 12.BNE r0, r1, 20: 000000 001 000 001 01010 1100011
+  
+* 13.BEQ r0, r0, 15: 000000 000 000 000 01110 1100011
+
+
