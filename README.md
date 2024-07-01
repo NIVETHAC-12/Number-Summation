@@ -711,3 +711,6 @@ J-Type instructions are used for jump operations, changing the flow of control u
 * 13.BEQ r0, r0, 15: 000000 000 000 000 01110 1100011
 
 
+XXXXXXXXXX
+
+
