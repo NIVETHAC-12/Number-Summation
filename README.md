@@ -485,6 +485,7 @@ J-Type instructions are used for jump operations, changing the flow of control u
 
 * 1.ADD r1,r2,r3
 
+
    * opcode: `0110011` (R-type)
    * funct3: `000`
    * funct7: `0000000`
@@ -492,6 +493,7 @@ J-Type instructions are used for jump operations, changing the flow of control u
    * rs2: `r3` (011)
    * rd: `r1` (001)
    * 32-bit: `0000000 011 010 000 001 0110011`
+
 
 
 * 2.SUB r3,r1,r2
@@ -506,7 +508,8 @@ J-Type instructions are used for jump operations, changing the flow of control u
     * 32-bit: `0100000 010 001 000 011 0110011`
 
 
-* 3. AND r2, r1, r3
+
+* 3.AND r2, r1, r3
 
 
    * opcode: `0110011` (R-type)
@@ -518,6 +521,7 @@ J-Type instructions are used for jump operations, changing the flow of control u
    * 32-bit: `0000000 011 001 111 010 0110011`
 
    
+
 * 4.OR r8,r2,r5
 
 
@@ -557,7 +561,77 @@ J-Type instructions are used for jump operations, changing the flow of control u
 
 
 
+* 7.SRL r16,r11,r2
+
+
+   * opcode: `0110011` (R-type)
+   * funct3: `101`
+   * funct7: `0000000`
+   * rs1: `r11` (1011)
+   * rs2: `r2` (010)
+   * rd: `r16` (10000)
+   * 32-bit: `0000000 010 1011 101 10000 0110011`
 
 
 
+* 8.SLL r15,r11,r2
 
+
+   * opcode: `0110011` (R-type)
+   * funct3: `001`
+   * funct7: `0000000`
+   * rs1: `r11` (1011)
+   * rs2: `r2` (010)
+   * rd: `r15` (1111)
+   * 32-bit: `0000000 010 1011 001 1111 0110011`
+
+
+
+# I-TYPE INSTRUCTION 
+
+
+**I-Type instructions format: `imm[11:0] | rs1 | funct3 | rd | opcode`
+
+
+* 9.ADDI r12,r3,5
+
+
+  * opcode: `0010011` (I-type)
+  * funct3: `000`
+  * imm: `000000000101`
+  * rs1: `r3` (011)
+  * rd: `r12` (1100)
+  * 32-bit: `000000000101 011 000 1100 0010011`
+
+
+
+* 10.LW r13,r11,2
+
+
+  * opcode: `0000011` (I-type)
+  * funct3: `010`
+  * imm: `000000000010`
+  * rs1: `r11` (1011)
+  * rd: `r13` (1101)
+  * 32-bit: `000000000010 1011 010 1101 0000011`
+
+
+
+# S-TYPE INSTRUCTIONS
+
+
+**S-Type instructions format: `imm[11:5] | rs2 | rs1 | funct3 | imm[4:0] | opcode`
+
+
+* 11.SW r3,r1,4
+
+
+  * opcode: `0100011` (S-type)
+  * funct3: `010`
+  * imm: `0000000 00100` (imm[11:5] = `0000000`, imm[4:0] = `00100`)
+  * rs1: `r1` (001)
+  * rs2: `r3` (011)
+  * 32-bit: `0000000 011 001 010 00100 0100011`
+
+
+ 
