@@ -435,27 +435,67 @@ BNE r0, r1, 20
 BEQ r0, r0, 15
 LW r13, r11, 2
 SLL r15, r11, r2
-Upload the 32-bit pattern on Github"
+Upload the 32-bit pattern on Github 
 
 
 
 
 
+**RISC-V, an open standard instruction set architecture (ISA), categorizes its instructions into several types based on their formats and intended operations. The primary RISC-V instruction types are R, I, S, B, U, and J.**
 
-  
+
+
+**1. R-Type (Register Type)**
+R-Type instructions are used for arithmetic and logical operations where all operands are registers.
+
+
+
+**2. I-Type (Immediate Type)**
+I-Type instructions are used for operations involving an immediate value (a constant) and a register.  
 
  
    
+**3. S-Type (Store Type)**
+S-Type instructions are used for store operations, where data from a register is stored into memory.
 
 
 
+**4. B-Type (Branch Type)**
+B-Type instructions are used for conditional branch operations, changing the flow of control based on a comparison.
 
 
 
-
+**5. U-Type (Upper Immediate Type)**
+U-Type instructions are used for operations involving a 20-bit upper immediate value.
 
 
   
+**6. J-Type (Jump Type)**
+J-Type instructions are used for jump operations, changing the flow of control unconditionally.
+
+
+
+**Here’s an overview of each type:**
+
+
+# R-TYPE INSTRUCTION
+
+
+* R-Type instructions format: `funct7 | rs2 | rs1 | funct3 | rd | opcode`
+
+* 1.ADD r1,r2,r3
+
+
+* opcode: 0110011 (R-type)
+  * funct3: 000
+  * funct7: 0000000
+  * rs1: r2 (010)
+  * rs2: r3 (011)
+  * rd: r1 (001)
+  * 32-bit: 0000000 011 010 000 001 0110011
+
+
+
    
 
 
