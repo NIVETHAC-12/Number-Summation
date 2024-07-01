@@ -418,6 +418,27 @@ XXXXXXXXXX
 
 
 
+# TASK 4
+
+
+## Identify various RISC-V instruction type (R, I, S, B, U, J) and exact 32-bit instruction code in the instruction type format for below RISC-V instructions 
+ADD r1, r2, r3
+SUB r3, r1, r2
+AND r2, r1, r3
+OR r8, r2, r5
+XOR r8, r1, r4
+SLT r10, r2, r4
+ADDI r12, r3, 5
+SW r3, r1, 4
+SRL r16, r11, r2
+BNE r0, r1, 20
+BEQ r0, r0, 15
+LW r13, r11, 2
+SLL r15, r11, r2
+Upload the 32-bit pattern on Github"
+
+
+
 
 
 
