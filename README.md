@@ -724,6 +724,33 @@ XXXXXXXXXX
 **Acknowledgements Section :**
 
    `https://github.com/vinayrayapati/rv32i/`
+   
+**I have developed a set of commands and achieved the desired output for my project. This was accomplished by referece above and the key sources, which provided valuable guidance and examples. These references were in understanding the required techniques and applying them effectively in my implementation.*
+
+
+# REFERENCE-DRIVEN DEVELOPMENT
+
+
+**WORKFLOW**
+
+**1 .Cloning the Reference:**
+
+* Cloning is the process of creating a local copy of a remote repository. This allows you to have a complete copy of the repo
+
+* _Command 1_ : `git clone http://github.com/vinayrayapati/rv32i.git my_ticket_rv32i`
+
+* where `my_ticket_rv32i` is your file name.
+
+* ![Screenshot from 2024-07-08 12-27-00](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/bde0d41a-e8fb-44fc-b524-092f0b5cffbd)
+
+
+* _Command 2_ : `cd my_ticket_rv32i`
+
+* This will download the project into a local directory named `my_ticket_rv32i`
+
+
+
+
 
 
 
