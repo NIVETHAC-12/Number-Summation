@@ -757,6 +757,80 @@ XXXXXXXXXX
 * _command 4_ : `sudo apt install inverilog gtkwave`
 
 
+*![Screenshot from 2024-07-08 12-27-27](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/2e61f4d1-b02f-47e6-a40d-4055856bd23c)
+
+
+
+![Screenshot from 2024-07-08 12-27-40](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/8328ecd5-3263-4283-bb87-2411441b406b)
+
+
+**3 .Testbench File:**
+
+
+  _Here we use the Testbench to setup our environment to test and validate code_
+
+
+* Open Testbench file using text editor:
+
+* `nano iiitb_rv32i_tb.v`
+
+
+~~~
+initial begin
+RN = 1'b1;
+clk = 1'b1;
+
+$dumpfile ("iiitb_rv32i.vcd"); //by default vcd(NAME)
+$dumpvars (0,iiitb_rv32i_tb);
+
+   #5 RN = 1'b0;
+
+   #300 $finish;
+end
+endmodule
+~~~
+
+
+![Screenshot from 2024-07-08 12-28-13](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/7456be8f-9258-49b2-9fae-b586fb89afce)
+
+
+* Simulation
+
+* `iverilog -o rv32i_simulation iiitb_rv32i.v iiitb_rv32i_tb.v`
+
+
+![Screenshot from 2024-07-08 12-28-37 (1)](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/70c1d063-9c50-4be4-9075-415e25ba2e75)
+
+
+**4 .Run Functional Simulation:**
+
+* `vvp rv32i_simulation`
+
+
+* ![Screenshot from 2024-07-08 11-50-20 (1)](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/ca54eba9-3a81-4e94-a386-040d41babc7e)
+
+
+* Here we get he Output in the form of a wave
+
+* `gtkwave simulation.vcd`
+
+* Here we get the gtkwave windows and Output can be obtained.
+
+
+
+# OUTPUT 
+
+## 1.ADD (r1,r2,r3)
+
+![addition git](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/d3041789-15f5-4bcb-b643-8333cc6e7e1d)
+
+
+
+
+  
+
+
+
 
 
 
