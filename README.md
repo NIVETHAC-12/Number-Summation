@@ -714,3 +714,11 @@ J-Type instructions are used for jump operations, changing the flow of control u
 XXXXXXXXXX
 
 
+
+
+# TASK 5
+
+## RISC-V Core Verilog netlist and Testbench for Functional simulation.
+
+
+
