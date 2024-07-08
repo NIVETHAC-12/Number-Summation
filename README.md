@@ -869,7 +869,8 @@ endmodule
 ## 9. SLL (r15,r11,r2)
 
 
-![Screenshot from 2024-07-08 12-07-06](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/8de35fe1-e845-4b3c-852f-3f36ea446ed6)
+![Screenshot from 2024-07-08 12-04-12](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/2645fe45-499c-42f8-93ca-d7adb01f1fa7)
+
 
 
 ## 10. GTKWAVE WINDOW
