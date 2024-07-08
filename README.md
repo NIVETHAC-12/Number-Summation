@@ -721,4 +721,10 @@ XXXXXXXXXX
 ## RISC-V Core Verilog netlist and Testbench for Functional simulation.
 
 
+**Acknowledgements Section :**
+
+   `https://github.com/vinayrayapati/rv32i/`
+
+
+
 
