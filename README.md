@@ -825,6 +825,68 @@ endmodule
 ![addition git](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/d3041789-15f5-4bcb-b643-8333cc6e7e1d)
 
 
+## 2.SUB (r3,r1,r2)
+
+![sub github](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/efeafd91-16d0-453a-82a2-b176574577c1)
+
+
+## 3. AND (r2,r1,r3)
+
+![and git](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/f728b206-8c70-4801-a650-8e0e5f96e1cb)
+
+
+## 4. OR (r8,r2,r5)
+
+
+![OR GIT](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/9939ed4e-d827-492d-85dc-ca4a364bbe70)
+
+
+## 5. XOR (r8,r1,r4)
+
+
+![XOR GIT](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/fcdd12d6-5f2a-401e-9cda-0503aab1fae0)
+
+
+## 6. SLT (r10,r2,r4)
+
+
+![Screenshot from 2024-07-08 12-04-12](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/b78ca7fe-235f-48a4-8d9c-07bee64c9c16)
+
+
+## 7. BEQ (r0,r0,15)
+
+
+![BLQ GIT](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/28c48817-2cdc-4dfe-b224-8abbbc906ea3)
+
+
+## 8. SUB (r3,r1,r2)
+
+
+![Screenshot from 2024-07-08 12-01-23 (1)](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/12aa9992-7ec7-4276-a285-984747222d5e)
+
+
+## 9. SLL (r15,r11,r2)
+
+
+![Screenshot from 2024-07-08 12-07-06](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/8de35fe1-e845-4b3c-852f-3f36ea446ed6)
+
+
+## 10. GTKWAVE WINDOW
+
+
+![Screenshot from 2024-07-08 11-52-07](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/d33352ef-8bf6-436e-ad5e-73e8f45f709b)
+
+
+__TESTS EXECUTED AND RESULTS VERIFIED__
+
+
+XXXXXXXXXX
+
+
+
+
+
+
 
 
   
