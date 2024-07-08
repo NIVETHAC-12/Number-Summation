@@ -859,10 +859,11 @@ endmodule
 ![BLQ GIT](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/28c48817-2cdc-4dfe-b224-8abbbc906ea3)
 
 
-## 8. SUB (r3,r1,r2)
+## 8. BNE (r0,r1,20)
 
 
-![Screenshot from 2024-07-08 12-01-23 (1)](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/12aa9992-7ec7-4276-a285-984747222d5e)
+![Screenshot from 2024-07-08 12-07-06 (1)](https://github.com/NIVETHAC-12/Number-Summation/assets/173597872/981af526-93f9-4bf2-8be5-c280853afe56)
+
 
 
 ## 9. SLL (r15,r11,r2)
