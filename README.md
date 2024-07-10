@@ -886,7 +886,29 @@ XXXXXXXXXX
 
 
 
+# TASK 6
 
+# AUTOMATED PARKING TICKET VENDING MACHINE 
+
+
+## PROJECT OVERVIEW
+
+   **OBJECTIVE**
+
+   * Develop an automated parking ticket vending machine (PTVM) that can issue parking 
+     tickets, accept payments, and provide receipts to users.
+
+   **KEY FEATURES**
+
+   * Ticket Issuance: Dispense parking tickets with relevant information.
+  
+   * Payment Processing: Accept cash, credit/debit cards, and digital payments.
+  
+   * Receipt Printing: Provide receipts for transactions.
+  
+   * User Interface: Simple and intuitive touch screen interface.
+  
+   * Backend System: Manage data and transactions.
 
 
 
