@@ -1053,6 +1053,34 @@ int main() {
 ```
 
 
+# OUTPUT 
+
+
+* **This is the final working model of the _TICKET TERMINAL DESIGNER_ using VSDSQUADRON-MINI**
+
+* STEPS:
+
+* 1.Connections are made using Breadboard
+* 2.LCD display connected to show the number of tickets
+* 3.VSDS kit is connected to the software and code dumped
+* 4.Here, I have taken BUZZER as the output which indicates the number of buzzers equal to number of tickets
+* 5.So the long buzzer helps in open the gates and let the vehicles to move
+
+
+
+## SETUP IMAGE
+
+
+![TICKET terminal image](https://github.com/user-attachments/assets/dee59fd7-e42d-43e2-a257-2af24d9f4068)
+
+
+## VIDEO OUTPUT
+
+
+https://drive.google.com/file/d/1whsRJPKMK7vmlpzlHpkQq4Oy5yVEGdv0/view?usp=drive_link 
+
+
+
 
 
 
